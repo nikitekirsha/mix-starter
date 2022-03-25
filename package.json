@@ -1,0 +1,24 @@
+{
+  "name": "mix-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hot": "mix && mix watch --hot"
+  },
+  "keywords": [],
+  "author": "hollywoodpig",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.5",
+    "laravel-mix": "^6.0.43",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "filename-regex": "^2.0.1",
+    "mix-html-builder": "^0.8.0"
+  }
+}
