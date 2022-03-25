@@ -3,10 +3,7 @@ require('mix-html-builder')
 
 mix
 	.setPublicPath('dist')
-	.postCss('src/css/main.css', '', [
-		require('autoprefixer'),
-		require('cssnano')
-	])
+	.css('src/css/main.css', '')
 	.js('src/js/main.js', '')
 	.html({
 		htmlRoot: 'src/index.html',
