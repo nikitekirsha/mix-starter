@@ -1,10 +1,17 @@
-<h2>💡 minimal laravel mix starter</h2>
-<h4>🛠️ start project</h4>
-<pre>npm i && npm run start</pre>
-<h4>⌨️ build project</h4>
-<pre>npm run build</pre>
-<h4>👉 docs</h4>
-<ul>
-	<li><a href="https://laravel-mix.com/docs/main/installation">laravel mix</a></li>
-	<li><a href="https://laravel-mix.com/extensions/html-builder">html builder</a></li>
-</ul>
+## 💡&nbsp; laravel mix minimal starter
+* uses [bem](https://en.bem.info) structure
+* uses [template](https://laravel-mix.com/extensions/html-builder) processor
+* uses [normalize.css](https://necolas.github.io/normalize.css/)
+* uses [webpack](https://webpack.js.org)
+
+## 🛠️&nbsp; start project
+* ```npm i```
+* ```npm run start```
+
+## ⌨️&nbsp; scripts
+* ```npm run start``` - start server
+* ```npm run build``` - build production
+
+## 👉&nbsp; docs
+* [laravel mix](https://laravel-mix.com/docs/main/installation)
+* [html builder](https://laravel-mix.com/extensions/html-builder)
