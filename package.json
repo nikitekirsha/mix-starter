@@ -1,8 +1,8 @@
 {
   "name": "mix-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "minimal laravel mix starter",
+  "main": "webpack.mix.js",
   "scripts": {
     "start": "mix && mix watch --hot",
 		"build": "mix --production"

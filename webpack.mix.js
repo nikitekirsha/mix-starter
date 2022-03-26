@@ -8,7 +8,7 @@ mix
 	.css('src/css/main.css', '')
 	.js('src/js/main.js', '')
 	.html({
-		htmlRoot: 'src/index.html',
+		htmlRoot: 'src/pages/*.html',
 		output: ''
 	})
 	.copyDirectory('src/icons/*', 'dist')
