@@ -2,6 +2,20 @@
 
 @import '~normalize.css/normalize.css';
 
+/* fonts */
+
+@font-face {
+	font-family: 'roboto';
+	font-weight: 400;
+	src: url('../fonts/roboto-400.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'roboto';
+	font-weight: 500;
+	src: url('../fonts/roboto-500.woff2') format('woff2');
+}
+
 /* resets */
 
 * {
@@ -50,12 +64,20 @@ img {
 /* styles */
 
 body {
+	-webkit-font-smoothing: antialiased;
 	min-width: 320px;
+	font-family: 'roboto', system-ui, sans-serif;
+}
+
+strong {
+	font-weight: 500;
 }
 
 /* your styles here */
 
-
+main {
+	margin: 2rem 0;
+}
 
 /* media */
 

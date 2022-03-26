@@ -1,6 +1,8 @@
 const mix = require('laravel-mix')
 require('mix-html-builder')
 
+// assets
+
 mix
 	.setPublicPath('dist')
 	.css('src/css/main.css', '')
@@ -9,6 +11,11 @@ mix
 		htmlRoot: 'src/index.html',
 		output: ''
 	})
+	.copyDirectory('src/icons/*', 'dist')
+
+// server
+
+mix
 	.webpackConfig({
 		devServer: {
 			hot: true,
