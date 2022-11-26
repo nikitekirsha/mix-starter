@@ -1,23 +1,23 @@
 {
-  "name": "mix-starter",
-  "version": "1.0.0",
-  "description": "laravel mix minimal starter",
-  "main": "index.js",
-  "scripts": {
-    "start": "mix && mix watch --hot",
+	"name": "mix-starter",
+	"version": "1.0.0",
+	"description": "laravel mix starter",
+	"scripts": {
+		"start": "mix && mix watch --hot",
 		"build": "mix --production"
-  },
-  "keywords": [],
-  "author": "hollywoodpig",
-  "license": "ISC",
-  "dependencies": {
-    "laravel-mix": "^6.0.43",
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.27.9",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "filename-regex": "^2.0.1",
-    "mix-html-builder": "^0.8.0"
-  }
+	},
+	"keywords": [],
+	"author": "hollywoodpig",
+	"license": "ISC",
+	"dependencies": {
+		"laravel-mix": "^6.0.49",
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.27.10",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.56.1",
+		"sass-loader": "^12.6.0"
+	}
 }

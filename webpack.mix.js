@@ -1,17 +1,13 @@
-const mix = require('laravel-mix')
-require('mix-html-builder')
+const mix = require('laravel-mix');
 
 // assets
 
 mix
 	.setPublicPath('dist')
-	.css('src/css/main.css', '')
-	.js('src/js/main.js', '')
-	.html({
-		htmlRoot: 'src/pages/*.html',
-		output: ''
-	})
-	.copyDirectory('src/icons/*', 'dist')
+	.sass('src/scss/main.scss', 'dist/css')
+	.js('src/js/main.js', 'dist/js')
+	.copyDirectory('src/img/*', 'dist/img')
+	.copy('src/*.html', 'dist');
 
 // server
 
@@ -20,14 +16,11 @@ mix
 		devServer: {
 			hot: true,
 			host: 'localhost',
-		}
+		},
 	})
 	.browserSync({
 		notify: false,
 		proxy: 'localhost:8080',
-		files: [
-			'src/css/**/*.css',
-			'src/js/**/*.js',
-			'src/**/*.html'
-		]
-	})
+		files: ['src/css/**/*.css', 'src/js/**/*.js', 'src/**/*.html'],
+		open: false,
+	});
